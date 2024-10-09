@@ -19,3 +19,29 @@ function circle_area() {
 
 /*****  Your code goes below  *****/
 
+/*
+Celsius = (Fahrenheit - 32) * 5/9
+Fahrenheit = (Celsius * 9/5) + 32
+*/
+
+function to_fahrenheit() {
+    let c = +prompt("What is the temperature in Celsius?");
+    console.log(`${c}° Celsius is equal to ${Math.round((c*9/5)+32)}° Fahrenheit`);
+}
+
+function to_celsius() {
+    let f = +prompt("What is the temperature in Fahrenheit?");
+    console.log(`${f}° Fahrenheit is equal to ${Math.round((f-32)*5/9)}° Celsius`);
+}
+
+// Roll a fake d10 and print the result
+function roll_d10() {
+    // No prompt for this one
+    console.log(Math.floor(Math.random() * 10) + 1);
+}
+
+// Roll a fake d6 🎲
+function roll_d6() {
+    // No prompt for this one
+    console.log(Math.floor(Math.random() * 6) + 1);
+}
